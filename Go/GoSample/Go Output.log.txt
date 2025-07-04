@@ -1,0 +1,117 @@
+Go Output.log.txt
+
+
+write a new detailed GoExplained.md markdown that explains features of go language plus pros and cons.  Include code examples.  add call out boxes for acronyms and advanced topics.  compare go language to C++, python, rust and similar languages.  the comparison should include pros and cons. finally include usage patterns plus popularity and third party support info.
+
+PS C:\Proj\Languages\Go> powershell -ExecutionPolicy Bypass -File "setup.ps1"
+=== Go Installation and Demo Runner ===
+
+Go is not installed
+Installing Go using winget...
+The `msstore` source requires that you view the following agreements before using.
+Terms of Transaction: https://aka.ms/microsoft-store-terms-of-transaction
+The source requires the current machine's 2-letter geographic region to be sent to the backend service to function properly (ex. "US").
+
+Do you agree to all the source agreements terms?
+[Y] Yes  [N] No: y
+Found an existing package already installed. Trying to upgrade the installed package...
+No available upgrade found.
+No newer package versions are available from the configured sources.
+Go installation completed!
+Please restart your terminal and run 'go run main.go'
+Press Enter to exit: 
+
+PS C:\Proj\Languages\Go> $env:PATH = $env:PATH + ";C:\Program Files\Go\bin"; go version
+go version go1.24.4 windows/amd64
+PS C:\Proj\Languages\Go> $env:PATH = $env:PATH + ";C:\Program Files\Go\bin"; go run main.go
+=== GO LANGUAGE FEATURES DEMONSTRATION ===
+Go version: go1.24.4
+Number of CPUs: 4
+Number of Goroutines: 1
+
+Person: {Name:Alice Age:25 private:}
+Hello, I'm Alice and I'm 25 years old
+10 / 2 = 5.00
+Error: division by zero
+Processed: processed: hello, Count: 5
+
+=== CHANNEL DEMONSTRATION ===
+Received: Hello from goroutine!
+Buffered values: 1 2 3
+
+=== SELECT STATEMENT DEMONSTRATION ===
+Received from ch1
+Received from ch2
+
+=== CONTEXT DEMONSTRATION ===
+Work cancelled: context deadline exceeded
+
+=== DEFER DEMONSTRATION ===
+Regular statement
+Defer in loop (potential issue):
+Deferred value: 2
+Deferred value: 1
+Deferred value: 0
+Cleaning up example.txt
+Third defer
+Second defer
+First defer
+
+=== PANIC AND RECOVER DEMONSTRATION ===
+About to panic...
+Recovered from panic: Something went wrong!
+
+=== SLICES AND MAPS DEMONSTRATION ===
+Slice: [1 2 3 4 5], Length: 5, Capacity: 6
+Sub-slice: [2 3 4]
+After modifying sub-slice, original slice: [1 99 3 4 5]
+Alice's age: 30
+Map after deleting Bob: map[Alice:30]
+
+=== POINTERS DEMONSTRATION ===
+Value of x: 42
+Address of x: 0xc00000a098
+Value of p: 0xc00000a098
+Value pointed to by p: 42
+After modifying through pointer, x = 100
+
+=== WORKER POOL DEMONSTRATION ===
+Worker 1 processing job 1
+Worker 2 processing job 2
+Worker 3 processing job 3
+Worker 1 processing job 4
+Worker 3 processing job 5
+Result: 2
+Result: 6
+Worker 2 processing job 6
+Result: 4
+Worker 2 processing job 7
+Result: 12
+Worker 1 processing job 8
+Result: 8
+Worker 3 processing job 9
+Result: 10
+Result: 18
+Result: 14
+Result: 16
+
+=== INTERFACES DEMONSTRATION ===
+Hello, I'm John and I'm 30 years old
+Successfully asserted to Person: John
+anything = 42 (type: int)
+anything = hello (type: string)
+
+=== VARIADIC FUNCTIONS DEMONSTRATION ===
+sum(1, 2, 3) = 6
+sum(1, 2, 3, 4, 5) = 15
+sum(numbers...) = 15
+
+=== CLOSURES DEMONSTRATION ===
+First call: 1
+Second call: 2
+Third call: 3
+double(5) = 10
+triple(5) = 15
+
+=== PROGRAM COMPLETED ===
+PS C:\Proj\Languages\Go> 
