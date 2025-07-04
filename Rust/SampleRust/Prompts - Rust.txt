@@ -1,0 +1,12 @@
+Prompts - Rust.txt
+
+write a new detailed RustExplained.md markdown that explains features of Rust language plus pros and cons.  Include code examples.  add call out boxes for acronyms and advanced topics.  compare Rust language to C#, C++, c, python, go and similar languages.  the comparison should include pros and cons. finally include usage patterns plus popularity and third party support info.
+Plus show typical packages, UI and web support. data support.
+Include a learning path that shows what order to learn and which concepts may take more time.
+
+
+
+Write a sample Rust program that shows the top features, including concurrency. Plus add comments, also show counter examples if possible.  other aeras to include are programming paradigms, functional programming, immutability, high-order functions, algebraic data types pattern matching. Plus show generics, type inference, package management and other abstractions.
+Plus show common syntax and compile errors.  Any common coding patterns would help.
+Add a function or source block at end that shows how Rust would interface with an LLM like ChatGPT or Claude.
+

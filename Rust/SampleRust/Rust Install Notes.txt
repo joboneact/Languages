@@ -1,0 +1,28 @@
+Rust Install Notes.txt
+
+rustup-init.64.exe
+
+Rust Visual C++ prerequisites
+
+Rust requires the Microsoft C++ build tools for Visual Studio 2017 or
+later, but they don't seem to be installed.
+
+You can acquire the build tools by installing Microsoft Visual Studio.
+
+  https://visualstudio.microsoft.com/downloads/
+
+Check the box for "Desktop development with C++" which will ensure that the
+needed components are installed. If your locale language is not English,
+then additionally check the box for English under Language packs.
+
+For more details see:
+
+  https://rust-lang.github.io/rustup/installation/windows-msvc.html
+
+Install the C++ build tools before proceeding.
+
+If you will be targeting the GNU ABI or otherwise know what you are
+doing then it is fine to continue installation without the build
+tools, but otherwise, install the C++ build tools before proceeding.
+
+Continue? (y/N)
